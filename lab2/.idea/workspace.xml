@@ -46,35 +46,29 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.SquarePrimesTest.testSquarePrimesTwo">
-    <configuration name="SetToZeroIfMaxFELTest.testZeroOutFELMaxes2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="应用程序.DebugExercise1">
+    <configuration name="DebugExercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DebugExercise.DebugExercise1" />
       <module name="lab2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IntList.*" />
+          <option name="PATTERN" value="DebugExercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="IntList" />
-      <option name="MAIN_CLASS_NAME" value="IntList.SetToZeroIfMaxFELTest" />
-      <option name="METHOD_NAME" value="testZeroOutFELMaxes2" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SetToZeroIfMaxFELTest.testZeroOutFELMaxes3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DebugExercise2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DebugExercise.DebugExercise2" />
       <module name="lab2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="IntList.*" />
+          <option name="PATTERN" value="DebugExercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="IntList" />
-      <option name="MAIN_CLASS_NAME" value="IntList.SetToZeroIfMaxFELTest" />
-      <option name="METHOD_NAME" value="testZeroOutFELMaxes3" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,11 +123,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.DebugExercise1" />
+        <item itemvalue="应用程序.DebugExercise2" />
         <item itemvalue="JUnit.SquarePrimesTest.testSquarePrimesTwo" />
         <item itemvalue="JUnit.SquarePrimesTest.testSquarePrimesNoPrime" />
         <item itemvalue="JUnit.SquarePrimesTest.testSquarePrimesSimple" />
-        <item itemvalue="JUnit.SetToZeroIfMaxFELTest.testZeroOutFELMaxes3" />
-        <item itemvalue="JUnit.SetToZeroIfMaxFELTest.testZeroOutFELMaxes2" />
       </list>
     </recent_temporary>
   </component>
@@ -149,11 +143,27 @@
       <workItem from="1739526393142" duration="248000" />
       <workItem from="1739526650815" duration="138000" />
       <workItem from="1739541573549" duration="202000" />
-      <workItem from="1745812659543" duration="2880000" />
+      <workItem from="1745812659543" duration="4175000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DebugExercise/DebugExercise1.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/DebugExercise/DebugExercise2.java</url>
+          <line>81</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

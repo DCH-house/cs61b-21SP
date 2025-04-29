@@ -5,7 +5,7 @@ import java.util.Observable;
 
 
 /** The state of a game of 2048.
- *  @author TODO: YOUR NAME HERE
+ *  @author Practice
  */
 public class Model extends Observable {
     /** Current contents of the board. */
@@ -113,12 +113,64 @@ public class Model extends Observable {
         // TODO: Modify this.board (and perhaps this.score) to account
         // for the tilt to the Side SIDE. If the board changed, set the
         // changed local variable to true.
-
+        this.board.setViewingPerspective(side);
+        int col = this.board.size();
+        for(int i = 0; i < col; i ++){
+            boolean b = this.tiltColumn(i);
+            if(b){
+                changed = true;
+            }
+        }
+        this.board.setViewingPerspective(Side.NORTH);
         checkGameOver();
         if (changed) {
             setChanged();
         }
         return changed;
+    }
+
+    /**
+     * this method is a helper method for tilt method
+     * it processes a single column of the board, since each column is handled independently
+     */
+    private boolean tiltColumn(int col){
+        int row = this.board.size();
+        int targetPosition = row - 1;
+        boolean res = false;
+        for(int i = row - 2; i >= 0; i --){
+            if(this.board.tile(col, i) != null){
+                Tile tile = this.board.tile(col, i);
+                if(isNullOrSameValue(col, i, targetPosition)){
+                    boolean move = this.board.move(col, targetPosition, tile);
+                    res = true;
+                    if(move){
+                        this.score += this.board.tile(col, targetPosition).value();
+                        targetPosition -= 1;
+                    }
+                }else{
+                    if(i != targetPosition - 1){
+                        this.board.move(col, targetPosition - 1, tile);
+                        res = true;
+                    }
+                    targetPosition -= 1;
+                }
+            }
+        }
+        return res;
+    }
+
+    /**
+     * this method is helper method for tiltColumn
+     * it check the target position if empty or has the same value as current tile
+     */
+    private boolean isNullOrSameValue(int col, int curRow, int targetRow){
+        if(this.board.tile(col, targetRow) == null){
+            return true;
+        }
+        if(this.board.tile(col, targetRow).value() == this.board.tile(col, curRow).value()){
+            return true;
+        }
+        return false;
     }
 
     /**
@@ -209,7 +261,8 @@ public class Model extends Observable {
             for(int j = 0; j < col; j ++){
                 for(int k = 0; k < 4; k ++){
                     int new_row = i + dx[k], new_col = j + dy[k];
-                    if(new_row >= 0 && new_row < row && new_col >= 0 && new_col < col && b.tile(new_col, new_row).value() == b.tile(j, i).value()){
+                    if(new_row >= 0 && new_row < row && new_col >= 0 && new_col < col
+                            && b.tile(new_col, new_row).value() == b.tile(j, i).value()){
                         return true;
                     }
                 }

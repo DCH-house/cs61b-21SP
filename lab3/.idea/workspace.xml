@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="385bfcf9-bf09-44bc-a290-f092e7bdeee2" name="Changes" comment="" />
+    <list default="true" id="c9a70a94-e729-4aa9-a1fa-f828fd0fd4cb" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +23,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2stiY8U4Q7wLFgNPlY2l3CpOnNb" />
+  <component name="ProjectId" id="2wRRIiFNSW8hghLWmB9Q2sOHArI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,26 +32,26 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CS61b-2024-Spring/proj0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/cs61b-21SP/library-sp21/javalib&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDK&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;库&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="game2048.Main" />
-      <module name="proj0" />
+  <component name="RunManager" selected="JUnit.TestBuggyAList.randomizedTest2">
+    <configuration name="TimeAList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="timingtest.TimeAList" />
+      <module name="lab3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="game2048.*" />
+          <option name="PATTERN" value="timingtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,90 +59,87 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAtLeastOneMoveExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj0" />
+    <configuration name="TimeSLList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="timingtest.TimeSLList" />
+      <module name="lab3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="game2048.*" />
+          <option name="PATTERN" value="timingtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestAtLeastOneMoveExists" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestEmptySpace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj0" />
+    <configuration name="TestBuggyAList.randomizedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="game2048.*" />
+          <option name="PATTERN" value="randomizedtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestEmptySpace" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="randomizedtest" />
+      <option name="MAIN_CLASS_NAME" value="randomizedtest.TestBuggyAList" />
+      <option name="METHOD_NAME" value="randomizedTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMaxTileExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj0" />
+    <configuration name="TestBuggyAList.randomizedTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="game2048.*" />
+          <option name="PATTERN" value="randomizedtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestMaxTileExists" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="randomizedtest" />
+      <option name="MAIN_CLASS_NAME" value="randomizedtest.TestBuggyAList" />
+      <option name="METHOD_NAME" value="randomizedTest2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestModel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj0" />
+    <configuration name="TestBuggyAList.testThreeAddThreeRemove" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="game2048.*" />
+          <option name="PATTERN" value="randomizedtest.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="game2048" />
-      <option name="MAIN_CLASS_NAME" value="game2048.TestModel" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="randomizedtest" />
+      <option name="MAIN_CLASS_NAME" value="randomizedtest.TestBuggyAList" />
+      <option name="METHOD_NAME" value="testThreeAddThreeRemove" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Main" />
-        <item itemvalue="JUnit.TestAtLeastOneMoveExists" />
-        <item itemvalue="JUnit.TestEmptySpace" />
-        <item itemvalue="JUnit.TestMaxTileExists" />
-        <item itemvalue="JUnit.TestModel" />
+        <item itemvalue="JUnit.TestBuggyAList.randomizedTest2" />
+        <item itemvalue="JUnit.TestBuggyAList.randomizedTest" />
+        <item itemvalue="JUnit.TestBuggyAList.testThreeAddThreeRemove" />
+        <item itemvalue="应用程序.TimeSLList" />
+        <item itemvalue="应用程序.TimeAList" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="385bfcf9-bf09-44bc-a290-f092e7bdeee2" name="Changes" comment="" />
-      <created>1739281316673</created>
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c9a70a94-e729-4aa9-a1fa-f828fd0fd4cb" name="更改" comment="" />
+      <created>1746002322564</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1739281316673</updated>
-      <workItem from="1739281317635" duration="1219000" />
-      <workItem from="1739411029958" duration="8703000" />
-      <workItem from="1739438301701" duration="1136000" />
-      <workItem from="1739541788355" duration="72000" />
-      <workItem from="1745834280776" duration="11655000" />
-      <workItem from="1745918685202" duration="474000" />
+      <updated>1746002322564</updated>
+      <workItem from="1746002323657" duration="5568000" />
+      <workItem from="1746168346739" duration="2264000" />
     </task>
     <servers />
   </component>
@@ -151,13 +148,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/game2048/TestModel.java</url>
-          <line>1015</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <condition expression="this instanceof java.lang.ArrayIndexOutOfBoundsException " language="JAVA" />
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
 </project>

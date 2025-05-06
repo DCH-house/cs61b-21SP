@@ -123,10 +123,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestBuggyAList.randomizedTest2" />
-        <item itemvalue="JUnit.TestBuggyAList.randomizedTest" />
-        <item itemvalue="JUnit.TestBuggyAList.testThreeAddThreeRemove" />
         <item itemvalue="应用程序.TimeSLList" />
         <item itemvalue="应用程序.TimeAList" />
+        <item itemvalue="JUnit.TestBuggyAList.randomizedTest" />
+        <item itemvalue="JUnit.TestBuggyAList.testThreeAddThreeRemove" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1746002322564</updated>
       <workItem from="1746002323657" duration="5568000" />
-      <workItem from="1746168346739" duration="2264000" />
+      <workItem from="1746168346739" duration="5519000" />
     </task>
     <servers />
   </component>

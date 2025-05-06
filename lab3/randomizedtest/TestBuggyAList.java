@@ -67,13 +67,11 @@ public class TestBuggyAList {
                 int randVal = StdRandom.uniform(0, 100);
                 A.addLast(randVal);
                 B.addLast(randVal);
-                //System.out.println("addLast(" + randVal + ")");
             } else if (operationNumber == 1) {
                 // getLast
                 if (A.size() > 0) {
                     Integer aLast = A.getLast();
                     Integer bLast = B.getLast();
-                    //System.out.println("getLast: " + aLast + " " + bLast);
                 }
             }else if(operationNumber == 2){
                 // removeLast

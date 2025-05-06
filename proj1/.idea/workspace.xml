@@ -53,8 +53,8 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.LinkedListDequeTest.equalsWithDiffTest">
-    <configuration name="LinkedListDequeTest.IteratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ArrayDequeTest">
+    <configuration name="ArrayDequeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj1" />
       <extension name="coverage">
         <pattern>
@@ -63,14 +63,29 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="deque" />
-      <option name="MAIN_CLASS_NAME" value="deque.LinkedListDequeTest" />
-      <option name="METHOD_NAME" value="IteratorTest" />
+      <option name="MAIN_CLASS_NAME" value="deque.ArrayDequeTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArrayDequeTest.addLastWithTwoEleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deque.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="deque" />
+      <option name="MAIN_CLASS_NAME" value="deque.ArrayDequeTest" />
+      <option name="METHOD_NAME" value="addLastWithTwoEleTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListDequeTest.bigLLDequeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayDequeTest.equalsWithDiffTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj1" />
       <extension name="coverage">
         <pattern>
@@ -79,30 +94,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="deque" />
-      <option name="MAIN_CLASS_NAME" value="deque.LinkedListDequeTest" />
-      <option name="METHOD_NAME" value="bigLLDequeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinkedListDequeTest.equalsWithDiffTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deque.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="deque" />
-      <option name="MAIN_CLASS_NAME" value="deque.LinkedListDequeTest" />
+      <option name="MAIN_CLASS_NAME" value="deque.ArrayDequeTest" />
       <option name="METHOD_NAME" value="equalsWithDiffTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListDequeTest.equalsWithSameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayDequeTest.equalsWithSameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj1" />
       <extension name="coverage">
         <pattern>
@@ -111,14 +110,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="deque" />
-      <option name="MAIN_CLASS_NAME" value="deque.LinkedListDequeTest" />
+      <option name="MAIN_CLASS_NAME" value="deque.ArrayDequeTest" />
       <option name="METHOD_NAME" value="equalsWithSameTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinkedListDequeTest.getAndGetReWithTwoEleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ArrayDequeTest.getAndGetReWithTwoEleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj1" />
       <extension name="coverage">
         <pattern>
@@ -127,7 +126,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="deque" />
-      <option name="MAIN_CLASS_NAME" value="deque.LinkedListDequeTest" />
+      <option name="MAIN_CLASS_NAME" value="deque.ArrayDequeTest" />
       <option name="METHOD_NAME" value="getAndGetReWithTwoEleTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -136,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LinkedListDequeTest.equalsWithDiffTest" />
-        <item itemvalue="JUnit.LinkedListDequeTest.getAndGetReWithTwoEleTest" />
-        <item itemvalue="JUnit.LinkedListDequeTest.IteratorTest" />
-        <item itemvalue="JUnit.LinkedListDequeTest.equalsWithSameTest" />
-        <item itemvalue="JUnit.LinkedListDequeTest.bigLLDequeTest" />
+        <item itemvalue="JUnit.ArrayDequeTest" />
+        <item itemvalue="JUnit.ArrayDequeTest.getAndGetReWithTwoEleTest" />
+        <item itemvalue="JUnit.ArrayDequeTest.addLastWithTwoEleTest" />
+        <item itemvalue="JUnit.ArrayDequeTest.equalsWithDiffTest" />
+        <item itemvalue="JUnit.ArrayDequeTest.equalsWithSameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -154,11 +153,20 @@
       <updated>1746002135501</updated>
       <workItem from="1746002136610" duration="170000" />
       <workItem from="1746175293878" duration="7870000" />
-      <workItem from="1746495561485" duration="1634000" />
+      <workItem from="1746495561485" duration="8279000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <condition expression="this instanceof ArrayIndexOutOfBoundsException" language="JAVA" />
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -130,7 +130,7 @@ public class LinkedListDequeTest {
     }
 
     @Test
-    /** check the addFirst method with two elements */
+    /** check the addLast method with two elements */
     public void addLastWithTwoEleTest(){
         LinkedListDeque<Integer> lld = new LinkedListDeque<>();
         lld.addLast(1);

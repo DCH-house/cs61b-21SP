@@ -72,11 +72,13 @@ public class TestArrayDequeEC {
                     stringBuilder.append("removeLast()\n");
                     assertEquals(stringBuilder.toString(), sad.removeLast(), ads.removeLast());
                 }
-            }else if(option == 4){
+            }else if(option == 4) {
                 // get
-                int index = StdRandom.uniform(0, sad.size());
-                stringBuilder.append("get(" + index + ")\n");
-                assertEquals(stringBuilder.toString(), sad.get(index), ads.get(index));
+                if (sad.size() > 0) {
+                    int index = StdRandom.uniform(0, sad.size());
+                    stringBuilder.append("get(" + index + ")\n");
+                    assertEquals(stringBuilder.toString(), sad.get(index), ads.get(index));
+                }
             }
         }
     }

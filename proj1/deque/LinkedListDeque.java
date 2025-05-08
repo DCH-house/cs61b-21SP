@@ -8,7 +8,7 @@ import java.util.Iterator;
  * @author Practice
  * @project proj1
  */
-public class LinkedListDeque<T> implements Iterable<T>{
+public class LinkedListDeque<T> implements Iterable<T>, Deque<T>{
     private class Node{
         Node previous;
         T data;
@@ -24,7 +24,7 @@ public class LinkedListDeque<T> implements Iterable<T>{
         this.size = 0;
         this.temp = sentinel;
     }
-
+    @Override
     public void addFirst(T item){
         if(item == null){
             throw new IllegalArgumentException("can not add null!");
@@ -38,7 +38,7 @@ public class LinkedListDeque<T> implements Iterable<T>{
         newNode.previous = this.sentinel;
         this.size += 1;
     }
-
+    @Override
     public void addLast(T item){
         if(item == null){
             throw new IllegalArgumentException("can not add null!");
@@ -52,15 +52,15 @@ public class LinkedListDeque<T> implements Iterable<T>{
         this.sentinel.previous = newNode;
         this.size += 1;
     }
-
+/*    @Override
     public boolean isEmpty(){
         return this.size == 0;
-    }
-
+    }*/
+    @Override
     public int size(){
         return this.size;
     }
-
+    @Override
     public void printDeque(){
         Node cur = this.sentinel.next;
         while(cur != this.sentinel){
@@ -69,7 +69,7 @@ public class LinkedListDeque<T> implements Iterable<T>{
         }
         System.out.println();
     }
-
+    @Override
     public T removeFirst(){
         if(this.size == 0){
             return null;
@@ -82,7 +82,7 @@ public class LinkedListDeque<T> implements Iterable<T>{
         this.size -= 1;
         return  res;
     }
-
+    @Override
     public T removeLast(){
         if(this.size == 0){
             return null;
@@ -95,7 +95,7 @@ public class LinkedListDeque<T> implements Iterable<T>{
         this.size -= 1;
         return  res;
     }
-
+    @Override
     public T get(int index){
         if(index < 0 || index >= this.size) {
             return null;

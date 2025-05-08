@@ -6,7 +6,7 @@ import java.util.Iterator;
  * @author Practice
  * @project proj1
  */
-public class ArrayDeque<T> implements Iterable<T>{
+public class ArrayDeque<T> implements Iterable<T>, Deque<T>{
     private T[] items;
     private int size;
     /** the position point to the head of ArrayDeque and has element at this position */
@@ -19,7 +19,7 @@ public class ArrayDeque<T> implements Iterable<T>{
         last = 0;
         size = 0;
     }
-
+    @Override
     public void addFirst(T item){
         if(item == null){
             throw new IllegalArgumentException("can not add null!");
@@ -31,7 +31,7 @@ public class ArrayDeque<T> implements Iterable<T>{
         items[first] = item;
         size += 1;
     }
-
+    @Override
     public void addLast(T item){
         if(item == null){
             throw new IllegalArgumentException("can not add null!");
@@ -53,14 +53,15 @@ public class ArrayDeque<T> implements Iterable<T>{
         last = size;
         items = newArray;
     }
+/*    @Override
     public boolean isEmpty(){
         return size == 0;
-    }
-
+    }*/
+    @Override
     public int size(){
         return size;
     }
-
+    @Override
     public void printDeque(){
         int temp = size;
         int cur = first;
@@ -71,7 +72,7 @@ public class ArrayDeque<T> implements Iterable<T>{
         }
         System.out.println();
     }
-
+    @Override
     public T removeFirst(){
         if(size == 0){
             return null;
@@ -85,7 +86,7 @@ public class ArrayDeque<T> implements Iterable<T>{
         size -= 1;
         return res;
     }
-
+    @Override
     public T removeLast(){
         if(size == 0){
             return null;
@@ -99,7 +100,7 @@ public class ArrayDeque<T> implements Iterable<T>{
         size -= 1;
         return res;
     }
-
+    @Override
     public T get(int index){
         if(index < 0 || index >= size){
             return null;
@@ -178,5 +179,9 @@ public class ArrayDeque<T> implements Iterable<T>{
         }
 
         return true;
+    }
+
+    public T[] getItems(){
+        return this.items;
     }
 }

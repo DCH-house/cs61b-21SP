@@ -8,7 +8,7 @@ import java.util.Iterator;
  * @author Practice
  * @project proj1
  */
-public class LinkedListDeque<T> implements Iterable<T>, Deque<T>{
+public class LinkedListDeque<T> implements Iterable<T>, Deque<T> {
     private class Node{
         Node previous;
         T data;
@@ -25,7 +25,7 @@ public class LinkedListDeque<T> implements Iterable<T>, Deque<T>{
         this.temp = sentinel;
     }
     @Override
-    public void addFirst(T item){
+    public void addFirst(T item) {
         if(item == null){
             throw new IllegalArgumentException("can not add null!");
         }
@@ -149,11 +149,11 @@ public class LinkedListDeque<T> implements Iterable<T>, Deque<T>{
 
     @Override
     public boolean equals(Object o){
-        if(o == null || !(o instanceof LinkedListDeque)) {
+        if(o == null || !(o instanceof Deque)) {
             return false;
         }
-        LinkedListDeque lld = (LinkedListDeque)o;
-        if(this.size != lld.size){
+        Deque lld = (Deque)o;
+        if(this.size != lld.size()){
             return false;
         }
         for(int i = 0; i < this.size; i ++){

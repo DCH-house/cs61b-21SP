@@ -54,7 +54,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.TTFAF">
+  <component name="RunManager" selected="JUnit.ArrayDequeTest.resizeTest">
     <configuration name="GuitarHero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gh2.GuitarHero" />
       <module name="proj1" />
@@ -94,6 +94,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ArrayDequeTest.resizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="proj1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deque.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="deque" />
+      <option name="MAIN_CLASS_NAME" value="deque.ArrayDequeTest" />
+      <option name="METHOD_NAME" value="resizeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestGuitarString.testPluckTheAString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="proj1" />
       <extension name="coverage">
@@ -110,29 +126,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGuitarString.testTic" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="proj1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="gh2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="gh2" />
-      <option name="MAIN_CLASS_NAME" value="gh2.TestGuitarString" />
-      <option name="METHOD_NAME" value="testTic" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ArrayDequeTest.resizeTest" />
         <item itemvalue="应用程序.TTFAF" />
         <item itemvalue="应用程序.GuitarHero" />
         <item itemvalue="应用程序.GuitarHeroLite" />
         <item itemvalue="JUnit.TestGuitarString.testPluckTheAString" />
-        <item itemvalue="JUnit.TestGuitarString.testTic" />
       </list>
     </recent_temporary>
   </component>
@@ -147,7 +147,7 @@
       <workItem from="1746002136610" duration="170000" />
       <workItem from="1746175293878" duration="7870000" />
       <workItem from="1746495561485" duration="8832000" />
-      <workItem from="1746598836105" duration="8114000" />
+      <workItem from="1746598836105" duration="10736000" />
     </task>
     <servers />
   </component>

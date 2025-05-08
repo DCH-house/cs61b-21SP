@@ -6,7 +6,7 @@ import java.util.Iterator;
  * @author Practice
  * @project proj1
  */
-public class ArrayDeque<T> implements Iterable<T>, Deque<T>{
+public class ArrayDeque<T> implements Iterable<T>, Deque<T> {
     private T[] items;
     private int size;
     /** the position point to the head of ArrayDeque and has element at this position */
@@ -53,10 +53,7 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T>{
         last = size;
         items = newArray;
     }
-/*    @Override
-    public boolean isEmpty(){
-        return size == 0;
-    }*/
+
     @Override
     public int size(){
         return size;
@@ -114,10 +111,10 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T>{
         return items[Math.floorMod(cur, items.length)];
     }
 
-    public T getRecursive(int index){
-        int cur = first;
-        return getRecursive(cur, index);
-    }
+//    public T getRecursive(int index){
+//        int cur = first;
+//        return getRecursive(cur, index);
+//    }
 
     private T getRecursive(int cur, int index){
         if(index < 0 || index >= size){
@@ -157,14 +154,20 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T>{
 
     @Override
     public boolean equals(Object o){
-        if(o == null || !(o instanceof ArrayDeque)){
+        if(o == null || !(o instanceof Deque)){
             return false;
         }
-        ArrayDeque comparedArrayDeque = (ArrayDeque) o;
-        if(this.size != comparedArrayDeque.size){
+        Deque comparedArrayDeque = (Deque) o;
+        if(this.size != comparedArrayDeque.size()){
             return false;
         }
-        int i = 0;
+        for(int i = 0; i < size; i ++){
+            if(!this.get(i).equals(comparedArrayDeque.get(i))){
+                return false;
+            }
+        }
+        return true;
+/*        int i = 0;
         int cur1 = first;
         int cur2 = comparedArrayDeque.first;
         while(i < size){
@@ -176,12 +179,10 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T>{
             i += 1;
             cur1 += 1;
             cur2 += 1;
-        }
-
-        return true;
+        }*/
     }
 
-    public T[] getItems(){
-        return this.items;
-    }
+//    public T[] getItems(){
+//        return this.items;
+//    }
 }

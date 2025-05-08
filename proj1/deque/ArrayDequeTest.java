@@ -196,4 +196,15 @@ public class ArrayDequeTest {
             System.out.println(i);
         }
     }
+
+    @Test
+    /** check the resize method with 9 elements */
+    public void resizeTest(){
+        ArrayDeque<Integer> a = new ArrayDeque<>();
+        for(int i = 0; i < 9; i ++){
+            a.addLast(i);
+        }
+
+        assertEquals(9, a.size());
+    }
 }

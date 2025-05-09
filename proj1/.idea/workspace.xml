@@ -147,7 +147,7 @@
       <workItem from="1746002136610" duration="170000" />
       <workItem from="1746175293878" duration="7870000" />
       <workItem from="1746495561485" duration="8832000" />
-      <workItem from="1746598836105" duration="13733000" />
+      <workItem from="1746598836105" duration="14652000" />
     </task>
     <servers />
   </component>
@@ -156,13 +156,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/deque/ArrayDeque.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception">
           <condition expression="this instanceof ArrayIndexOutOfBoundsException" language="JAVA" />

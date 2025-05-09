@@ -8,15 +8,14 @@ import java.util.Iterator;
  * @author Practice
  * @project proj1
  */
-public class MaxArrayDeque<T> extends ArrayDeque<T>{
-    public MaxArrayDeque(){}
+public class MaxArrayDeque<T> extends ArrayDeque<T> {
 
     private Comparator<T> comparator;
-    public MaxArrayDeque(Comparator<T> c){
+    public MaxArrayDeque(Comparator<T> c) {
         this.comparator = c;
     }
 
-    public T max(){
+    public T max() {
         if (isEmpty()) return null;
         Iterator<T> it = iterator();
         T max = it.next();
@@ -28,7 +27,7 @@ public class MaxArrayDeque<T> extends ArrayDeque<T>{
         return max;
     }
 
-    public T max(Comparator<T> c){
+    public T max(Comparator<T> c) {
         if (isEmpty()) return null;
         Iterator<T> it = iterator();
         T max = it.next();

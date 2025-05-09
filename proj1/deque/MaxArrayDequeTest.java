@@ -14,7 +14,7 @@ public class MaxArrayDequeTest {
     @Test
     /** check the max method */
     public void maxTest(){
-        MaxArrayDeque<Integer> mad = new MaxArrayDeque<>();
+        MaxArrayDeque<Integer> mad = new MaxArrayDeque<>(Comparator.comparingInt(a -> a));
         mad.addLast(1);
         mad.addLast(2);
         mad.addLast(3);
@@ -25,7 +25,7 @@ public class MaxArrayDequeTest {
     @Test
     /** check the max(Comparator<T> c) method */
     public void maxWithComTest(){
-        MaxArrayDeque<Integer> mad = new MaxArrayDeque<>();
+        MaxArrayDeque<Integer> mad = new MaxArrayDeque<>(Comparator.comparingInt(a -> a));
         mad.addLast(1);
         mad.addLast(2);
         mad.addLast(3);

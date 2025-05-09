@@ -14,17 +14,17 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T> {
     /** the position point to the tail of ArrayDeque and has no element at this position */
     private int last;
     public ArrayDeque() {
-        items = (T[])new Object[8];
+        items = (T[]) new Object[8];
         first = 0;
         last = 0;
         size = 0;
     }
     @Override
-    public void addFirst (T item) {
-        if(item == null) {
+    public void addFirst(T item) {
+        if (item == null) {
             throw new IllegalArgumentException("can not add null!");
         }
-        if(size == items.length) {
+        if (size == items.length) {
             resize(items.length + (items.length >> 1));
         }
         first -= 1;
@@ -33,10 +33,10 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T> {
     }
     @Override
     public void addLast(T item) {
-        if(item == null) {
+        if (item == null) {
             throw new IllegalArgumentException("can not add null!");
         }
-        if(size == items.length) {
+        if (size == items.length) {
             resize(items.length + (items.length >> 1));
         }
         items[Math.floorMod(last, items.length)] = item;
@@ -45,7 +45,7 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T> {
     }
     private void resize(int capacity) {
         T[] newArray = (T[]) new Object[capacity];
-        for(int i = 0; i < size; i ++) {
+        for (int i = 0; i < size; i++) {
             newArray[i] = items[Math.floorMod(first, items.length)];
             first += 1;
         }
@@ -62,7 +62,7 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T> {
     public void printDeque() {
         int temp = size;
         int cur = first;
-        while(temp > 0) {
+        while (temp > 0) {
             System.out.print(items[Math.floorMod(cur, items.length)] + " ");
             cur += 1;
             temp -= 1;
@@ -71,39 +71,39 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T> {
     }
     @Override
     public T removeFirst() {
-        if(size == 0) {
+        if (size == 0) {
             return null;
         }
-        if(size < items.length / 4 && items.length >= 16) {
+        if (size < items.length / 4 && items.length >= 16) {
             resize(items.length / 4);
         }
         T res = items[Math.floorMod(first, items.length)];
-        items[Math.floorMod(first,items.length)] = null;
+        items[Math.floorMod(first, items.length)] = null;
         first += 1;
         size -= 1;
         return res;
     }
     @Override
     public T removeLast() {
-        if(size == 0) {
+        if (size == 0) {
             return null;
         }
-        if(size < items.length / 4 && items.length >= 16) {
+        if (size < items.length / 4 && items.length >= 16) {
             resize(items.length / 4);
         }
         last -= 1;
         T res = items[Math.floorMod(last, items.length)];
-        items[Math.floorMod(last,items.length)] = null;
+        items[Math.floorMod(last, items.length)] = null;
         size -= 1;
         return res;
     }
     @Override
     public T get(int index) {
-        if(index < 0 || index >= size) {
+        if (index < 0 || index >= size) {
             return null;
         }
         int cur = first;
-        while(index > 0) {
+        while (index > 0) {
             cur += 1;
             index -= 1;
         }
@@ -117,17 +117,17 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T> {
 //    }
 
     private T getRecursive(int cur, int index) {
-        if(index < 0 || index >= size) {
+        if (index < 0 || index >= size) {
             return null;
         }
-        if(index == 0) {
+        if (index == 0) {
             return items[Math.floorMod(cur, items.length)];
         }
 
         return getRecursive(cur + 1, index - 1);
     }
     @Override
-    public Iterator<T> iterator(){
+    public Iterator<T> iterator() {
         return new ArrayIterator();
     }
 
@@ -154,15 +154,15 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T> {
 
     @Override
     public boolean equals(Object o) {
-        if(o == null || !(o instanceof Deque)) {
+        if (o == null || !(o instanceof Deque)) {
             return false;
         }
         Deque comparedArrayDeque = (Deque) o;
-        if(this.size != comparedArrayDeque.size()) {
+        if (this.size != comparedArrayDeque.size()) {
             return false;
         }
-        for(int i = 0; i < size; i ++) {
-            if(!this.get(i).equals(comparedArrayDeque.get(i))) {
+        for (int i = 0; i < size; i++) {
+            if (!this.get(i).equals(comparedArrayDeque.get(i))) {
                 return false;
             }
         }

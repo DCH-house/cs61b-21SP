@@ -25,10 +25,10 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T> {
             throw new IllegalArgumentException("can not add null!");
         }
         if(size == items.length){
-            resize(items.length + items.length >> 1);
+            resize(items.length + (items.length >> 1));
         }
-        first = Math.floorMod(first - 1, items.length);
-        items[first] = item;
+        first -= 1;
+        items[Math.floorMod(first, items.length)] = item;
         size += 1;
     }
     @Override
@@ -39,8 +39,8 @@ public class ArrayDeque<T> implements Iterable<T>, Deque<T> {
         if(size == items.length){
             resize(items.length + (items.length >> 1));
         }
-        items[last] = item;
-        last = Math.floorMod(last + 1, items.length);
+        items[Math.floorMod(last, items.length)] = item;
+        last += 1;
         size += 1;
     }
     private void resize(int capacity){

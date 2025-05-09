@@ -1,5 +1,6 @@
 package deque;
 
+import edu.princeton.cs.algs4.StdRandom;
 import org.junit.Test;
 
 
@@ -206,5 +207,49 @@ public class ArrayDequeTest {
         }
 
         assertEquals(9, a.size());
+    }
+
+    @Test
+    public void addAndRemoveTest(){
+        ArrayDeque<Integer> a = new ArrayDeque<>();
+        LinkedListDeque<Integer> lld = new LinkedListDeque<>();
+        StringBuilder stringBuilder = new StringBuilder();
+        for(int i = 0; i < 50000; i ++){
+            int option = StdRandom.uniform(0, 5);
+            if(option == 0){
+                // addFirst
+                int number = StdRandom.uniform(0, 20);
+                a.addFirst(number);
+                lld.addFirst(number);
+                stringBuilder.append("addFirst(" + number + ")\n");
+                assertEquals(stringBuilder.toString(), a.size(), lld.size());
+            }else if(option == 1){
+                // addLast
+                int number = StdRandom.uniform(0,20);
+                a.addLast(number);
+                lld.addLast(number);
+                stringBuilder.append("addLast(" + number + ")\n");
+                assertEquals(stringBuilder.toString(), a.size(), lld.size());
+            }else if(option == 2){
+                // removeFirst
+                if(a.size() > 0){
+                    stringBuilder.append("removeFirst()\n");
+                    assertEquals(stringBuilder.toString(), a.removeFirst(), lld.removeFirst());
+                }
+            }else if(option == 3){
+                // removeLast
+                if(a.size() > 0){
+                    stringBuilder.append("removeLast()\n");
+                    assertEquals(stringBuilder.toString(), a.removeLast(), lld.removeLast());
+                }
+            }else if(option == 4) {
+                // get
+                if (a.size() > 0) {
+                    int index = StdRandom.uniform(0, a.size());
+                    stringBuilder.append("get(" + index + ")\n");
+                    assertEquals(stringBuilder.toString(), a.get(index), lld.get(index));
+                }
+            }
+        }
     }
 }

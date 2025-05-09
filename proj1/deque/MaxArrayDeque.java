@@ -23,7 +23,7 @@ public class MaxArrayDeque<T> extends ArrayDeque<T> {
         Comparator<T> comp;
         if (comparator != null) {
             comp = comparator;
-        }else {
+        } else {
             comp = (Comparator<T>) Comparator.naturalOrder();
         }
         while (it.hasNext()) {

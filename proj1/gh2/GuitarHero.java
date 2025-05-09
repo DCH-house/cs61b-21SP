@@ -14,7 +14,7 @@ public class GuitarHero {
         int len = KEYBOARD.length();
         guitarStrings = new GuitarString[len];
         for (int i = 0; i < len; i++) {
-            guitarStrings[i] = new GuitarString(440*Math.pow(2,(i - 24) / 12));
+            guitarStrings[i] = new GuitarString(440 * Math.pow(2, (i - 24) / 12));
         }
     }
     public static void main(String[] args) {
@@ -29,12 +29,12 @@ public class GuitarHero {
             }
             /* compute the superposition of samples */
             double sample = 0.0;
-            for (int i = 0,len = KEYBOARD.length(); i < len; i++) {
+            for (int i = 0, len = KEYBOARD.length(); i < len; i++) {
                 sample += guitarStrings[i].sample();
             }
             /* play the sample on standard audio */
             StdAudio.play(sample);
-            for (int i = 0,len = KEYBOARD.length(); i < len; i++) {
+            for (int i = 0, len = KEYBOARD.length(); i < len; i++) {
                 guitarStrings[i].tic();
             }
         }

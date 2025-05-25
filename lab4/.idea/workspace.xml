@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6889c92b-e7ec-4bb5-b915-486494136b77" name="Changes" comment="" />
+    <list default="true" id="6dd143e6-f3f4-44ec-8e88-db82d3a07d1c" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,7 +23,7 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2spkgrMIA2BMror6FQULxZSPM7n" />
+  <component name="ProjectId" id="2x2WrmcyDrBg2olwVH3GwlvOY4W" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -32,35 +32,48 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/cs61b-21SP/lab5",
+    "last_opened_file_path": "D:/cs61b-21SP/library-sp21/javalib",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "MavenSettings",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "File.Encoding",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="Collatz" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Collatz" />
-      <module name="lab1" />
+    <configuration name="HorribleSteve" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flik.HorribleSteve" />
+      <module name="lab4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="flik.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.HorribleSteve" />
+      </list>
+    </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="6889c92b-e7ec-4bb5-b915-486494136b77" name="Changes" comment="" />
-      <created>1739160017834</created>
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="6dd143e6-f3f4-44ec-8e88-db82d3a07d1c" name="更改" comment="" />
+      <created>1747136849946</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1739160017834</updated>
-      <workItem from="1739160018806" duration="1519000" />
-      <workItem from="1747137124914" duration="951000" />
+      <updated>1747136849946</updated>
+      <workItem from="1747136851091" duration="1951000" />
     </task>
     <servers />
   </component>

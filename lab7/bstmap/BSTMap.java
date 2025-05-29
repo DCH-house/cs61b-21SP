@@ -8,7 +8,7 @@ import java.util.Set;
  * @author Practice
  * @project lab7
  */
-public class BSTMap<K, V> implements Map61B<K, V> {
+public class BSTMap<K extends Comparable<K>,V> implements Map61B<K, V> {
     private class Entry {
         K key;
         V val;
@@ -53,10 +53,7 @@ public class BSTMap<K, V> implements Map61B<K, V> {
             return false;
         }
 
-        // 由于泛型类型擦除，这里需要进行强制类型转换，并比较给定键与当前节点键的大小
-        @SuppressWarnings("unchecked")
-        Comparable<? super K> comparableKey = (Comparable<? super K>) node.key;
-        int cmp = comparableKey.compareTo(key);
+        int cmp = node.key.compareTo(key);
 
         // 如果比较结果为0，说明找到了匹配的键
         if (cmp == 0) {
@@ -82,9 +79,7 @@ public class BSTMap<K, V> implements Map61B<K, V> {
         if (node == null) {
             return null;
         }
-        @SuppressWarnings("unchecked")
-        Comparable<? super K> comparableKey = (Comparable<? super K>) node.key;
-        int cmp = comparableKey.compareTo(key);
+        int cmp = node.key.compareTo(key);
         if (cmp == 0) {
             return (V) node.val;
         } else if (cmp == 1) {
@@ -114,9 +109,7 @@ public class BSTMap<K, V> implements Map61B<K, V> {
         if (node == null) {
             return new Entry(key, value);
         }
-        @SuppressWarnings("unchecked")
-        Comparable<? super K> comparableKey = (Comparable<? super K>) node.key;
-        int cmp = comparableKey.compareTo(key);
+        int cmp = node.key.compareTo(key);
 
         if (cmp == 0) {
             node.val = value;

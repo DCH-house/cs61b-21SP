@@ -52,7 +52,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="应用程序.InsertRandomSpeedTest">
+  <component name="RunManager" selected="JUnit.TestBSTMap">
     <configuration name="InsertInOrderSpeedTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bstmap.InsertInOrderSpeedTest" />
       <module name="lab7" />
@@ -128,9 +128,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestBSTMap" />
         <item itemvalue="应用程序.InsertRandomSpeedTest" />
         <item itemvalue="应用程序.InsertInOrderSpeedTest" />
-        <item itemvalue="JUnit.TestBSTMap" />
         <item itemvalue="JUnit.TestBSTMap.sanityContainsKeyTest" />
         <item itemvalue="JUnit.TestBSTMap.sanityClearTest" />
       </list>
@@ -145,7 +145,7 @@
       <option name="presentableId" value="Default" />
       <updated>1748226240901</updated>
       <workItem from="1748226242270" duration="630000" />
-      <workItem from="1748499262695" duration="10409000" />
+      <workItem from="1748499262695" duration="10792000" />
     </task>
     <servers />
   </component>
@@ -159,12 +159,6 @@
           <url>file://$PROJECT_DIR$/bstmap/BSTMap.java</url>
           <line>117</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <condition expression="i == 10" language="JAVA" />
-          <url>file://$PROJECT_DIR$/bstmap/TestBSTMap.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <condition expression="key.equals(&quot;hi11&quot;)" language="JAVA" />

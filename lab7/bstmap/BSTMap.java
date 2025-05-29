@@ -1,5 +1,6 @@
 package bstmap;
 
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -8,74 +9,89 @@ import java.util.Set;
  * @project lab7
  */
 public class BSTMap<K, V> implements Map61B<K, V> {
+    private class Entry {
+        K key;
+        V val;
+        Entry left;
+        Entry right;
 
-    private BSTMap left;
-    private BSTMap right;
-    private K key;
-    private V val;
-    private int size;
-    public BSTMap() {
-        this.left = null;
-        this.right = null;
-        this.key = null;
-        this.val = null;
-        this.size = 0;
+        Entry(K k, V v) {
+            this.key = k;
+            this.val = v;
+            this.left = null;
+            this.right = null;
+        }
     }
-    private BSTMap(K key, V val) {
-        this.left = null;
-        this.right = null;
-        this.key = key;
-        this.val = val;
+    private int size;
+    private Entry root;
+    public BSTMap() {
+        this.root = null;
+        this.size = 0;
     }
     @Override
     public void clear() {
-        this.left = null;
-        this.right = null;
-        this.key = null;
-        this.val = null;
+        this.root = null;
         this.size = 0;
     }
 
     @Override
     public boolean containsKey(K key) {
-        return containsKey(key, this);
+        return containsKey(key, this.root);
     }
-    private boolean containsKey(K key, BSTMap node) {
+    /**
+     * 判断以node为根的二叉搜索树中是否包含指定的键
+     * 此方法是递归实现的，根据二叉搜索树的性质，比较给定键与节点键的大小，
+     * 从而决定向左子树或右子树递归搜索
+     *
+     * @param key 要搜索的键，用于查找其是否存在于树中
+     * @param node 当前考察的树的根节点，起始调用时应为整个树的根节点
+     * @return 如果树中包含指定的键，则返回true；否则返回false
+     */
+    private boolean containsKey(K key, Entry node) {
+        // 如果当前节点为空，说明已经到达树的底部，没有找到指定的键
         if (node == null) {
             return false;
         }
-        if (node.key.equals(key)) {
+
+        // 由于泛型类型擦除，这里需要进行强制类型转换，并比较给定键与当前节点键的大小
+        @SuppressWarnings("unchecked")
+        Comparable<? super K> comparableKey = (Comparable<? super K>) node.key;
+        int cmp = comparableKey.compareTo(key);
+
+        // 如果比较结果为0，说明找到了匹配的键
+        if (cmp == 0) {
             return true;
         }
-        if (node.key > key) {
+        // 如果当前节点的键大于给定键，则向左子树递归搜索
+        else if (cmp > 0) {
             return containsKey(key, node.left);
         }
-        if (node.key < key) {
+        // 如果当前节点的键小于给定键，则向右子树递归搜索
+        else {
             return containsKey(key, node.right);
         }
-
-        return false;
     }
+
+
     @Override
     public V get(K key) {
-        return get(key, this);
+        return get(key, this.root);
     }
 
-    private V get(K key, BSTMap node) {
+    private V get(K key, Entry node) {
         if (node == null) {
             return null;
         }
-        if (node.key.equals(key)) {
+        @SuppressWarnings("unchecked")
+        Comparable<? super K> comparableKey = (Comparable<? super K>) node.key;
+        int cmp = comparableKey.compareTo(key);
+        if (cmp == 0) {
             return (V) node.val;
-        }
-        if (node.key > key) {
+        } else if (cmp == 1) {
             return get(key, node.left);
-        }
-        if (node.key < key) {
+        } else {
             return get(key, node.right);
         }
-
-        return null;
     }
 
     @Override
@@ -85,23 +101,31 @@ public class BSTMap<K, V> implements Map61B<K, V> {
 
     @Override
     public void put(K key, V value) {
-        put(key, value, this);
+        if (this.root == null) {
+            this.root = new Entry(key, value);
+            this.size += 1;
+            return;
+        }
+        put(key, value, this.root);
         this.size += 1;
     }
 
-    private BSTMap put(K key, V value, BSTMap node){
+    private Entry put(K key, V value, Entry node){
         if (node == null) {
-            return new BSTMap(key, value);
+            return new Entry(key, value);
         }
-        if (node.key == key) {
+        @SuppressWarnings("unchecked")
+        Comparable<? super K> comparableKey = (Comparable<? super K>) node.key;
+        int cmp = comparableKey.compareTo(key);
+
+        if (cmp == 0) {
             node.val = value;
-        }
-        if (node.key < key) {
+        } else if (cmp == 1) {
+            node.left = put(key, value, node.left);
+        } else {
             node.right = put(key, value, node.right);
         }
-        if (node.key > key) {
-            node.left = put(key, value, node.right);
-        }
+
         return node;
     }
 
@@ -126,11 +150,14 @@ public class BSTMap<K, V> implements Map61B<K, V> {
     }
 
     public void printInOrder(){
-        if (this == null) {
+        printInOrder(this.root);
+    }
+    private void printInOrder(Entry node){
+        if (node == null) {
             return;
         }
-        this.left.printInOrder();
-        System.out.print(this.key + " ");
-        this.right.printInOrder();
+        printInOrder(node.left);
+        System.out.println(node.key + " " + node.val);
+        printInOrder(node.right);
     }
 }

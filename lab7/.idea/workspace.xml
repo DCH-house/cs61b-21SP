@@ -4,11 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28d65fe6-eaa7-45af-88cf-35e0b9b9fd45" name="更改" comment="" />
+    <list default="true" id="1d546b08-8a09-495b-9251-0ba54d4a2b07" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -23,60 +30,61 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="2x4CWQ2fv1Op7BYqyQLL8fdsyte" />
+  <component name="ProjectId" id="2xc8wYLzLVxdnw34Qt2alr3lBoQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/cs61b-21SP/proj2",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDK",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/cs61b-21SP/library-sp21/javalib&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Facet&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="capers.Main" />
-      <module name="lab6" />
+    <configuration name="TestBSTMap.sanityGenericsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lab7" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="capers.*" />
+          <option name="PATTERN" value="bstmap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="bstmap" />
+      <option name="MAIN_CLASS_NAME" value="bstmap.TestBSTMap" />
+      <option name="METHOD_NAME" value="sanityGenericsTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Main" />
+        <item itemvalue="JUnit.TestBSTMap.sanityGenericsTest" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
-      <changelist id="28d65fe6-eaa7-45af-88cf-35e0b9b9fd45" name="更改" comment="" />
-      <created>1747188000358</created>
+      <changelist id="1d546b08-8a09-495b-9251-0ba54d4a2b07" name="更改" comment="" />
+      <created>1748226240901</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1747188000358</updated>
-      <workItem from="1747188001387" duration="2415000" />
-      <workItem from="1747475107723" duration="615000" />
-      <workItem from="1747541310536" duration="27000" />
-      <workItem from="1748155942358" duration="7846000" />
+      <updated>1748226240901</updated>
+      <workItem from="1748226242270" duration="630000" />
+      <workItem from="1748499262695" duration="6424000" />
     </task>
     <servers />
   </component>

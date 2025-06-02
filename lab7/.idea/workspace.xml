@@ -39,7 +39,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/cs61b-21SP/library-sp21/javalib",
+    "last_opened_file_path": "D:/cs61b-21SP/lab8",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -52,7 +52,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.TestBSTMap">
+  <component name="RunManager" selected="应用程序.InsertRandomSpeedTest">
     <configuration name="InsertInOrderSpeedTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="bstmap.InsertInOrderSpeedTest" />
       <module name="lab7" />
@@ -128,8 +128,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestBSTMap" />
         <item itemvalue="应用程序.InsertRandomSpeedTest" />
+        <item itemvalue="JUnit.TestBSTMap" />
         <item itemvalue="应用程序.InsertInOrderSpeedTest" />
         <item itemvalue="JUnit.TestBSTMap.sanityContainsKeyTest" />
         <item itemvalue="JUnit.TestBSTMap.sanityClearTest" />
@@ -145,7 +145,8 @@
       <option name="presentableId" value="Default" />
       <updated>1748226240901</updated>
       <workItem from="1748226242270" duration="630000" />
-      <workItem from="1748499262695" duration="10792000" />
+      <workItem from="1748499262695" duration="12138000" />
+      <workItem from="1748841864321" duration="46000" />
     </task>
     <servers />
   </component>
@@ -154,19 +155,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/bstmap/BSTMap.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <condition expression="key.equals(&quot;hi11&quot;)" language="JAVA" />
-          <url>file://$PROJECT_DIR$/bstmap/BSTMap.java</url>
-          <line>51</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint enabled="true" type="java-exception">
           <condition expression="this instanceof NullPointerException" language="JAVA" />
